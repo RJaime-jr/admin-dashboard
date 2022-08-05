@@ -27,3 +27,52 @@ body{
     list-style-type: none;
     background-color: greenyellow;
 }
+.headbar{
+    background-color: rgb(253, 163, 238);
+}
+
+.main{
+    background-color: rgb(161, 212, 253);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+   
+}
+
+.project-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 25px;
+
+}
+.main-sidebar{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 25px;
+}
+
+.project{
+    width:200px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-left: 7px solid rgb(248, 192, 7);
+    border-radius: 10px;
+
+}
+.anouncements{
+background-color:  rgb(255, 255, 255);
+padding: 15px;
+width: 150px;
+height: 300px;
+border-radius: 10px;
+}
+
+.trending{
+    background-color:  rgb(255, 255, 255);
+padding: 15px;
+width: 150px;
+height: 300px;
+border-radius: 10px;
+}
+
