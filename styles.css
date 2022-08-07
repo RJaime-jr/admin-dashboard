@@ -1,19 +1,43 @@
+/*
+color palette
+orange ##F86624
+blanched almond #FFEECF
+Cadet Blue #729EA1
+Black Coffee #37323E
+Shadow Blue #8499B1
+*/
+
+
 html{
-    background-color: #ffe9c7;
+    /*background-color: #F86624;*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    color: #37323E;
 }
 
 body{
+    background-color: #939eb4;
+    
+}
+.filter-orange{
+    filter: invert(47%) sepia(68%) saturate(2472%) hue-rotate(347deg) brightness(101%) contrast(95%);
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    background-color: #939eb4;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
+
 }
 
 .container-grid{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 80%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 1fr 1fr;
 }
 .sidebar{
@@ -25,18 +49,24 @@ body{
     grid-template-rows: auto auto 1fr;
     grid-gap: 35px;
     list-style-type: none;
-    background-color: greenyellow;
+    background-color: #37323E;
+    color: #F86624;
 }
+
+
 
 /* Header */
 
 .headbar{
-    background-color: rgb(253, 163, 238);
+    background-color: #8499B1;
+    
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     padding: 20px;
+    box-shadow: 0px 3px 3px rgb(8, 8, 8);
 }
+
 .top-headbar{
     display: flex;
     justify-content: space-between;
@@ -87,11 +117,36 @@ body{
 .text{
    text-align: left;
 }
+.button-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.round-but{
+  
+  background-color: #37323E;
+  margin-right: 15px;
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #F86624;
+  cursor: pointer;
+  height: auto;
+  line-height: 1.5;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+
 
 /*Main*/
 
 .main{
-    background-color: rgb(161, 212, 253);
+    /*background-color: #939eb4;*/
     display: grid;
     grid-template-columns: 2fr 1fr;
    
@@ -113,24 +168,25 @@ body{
 .project{
     width:200px;
     height: 150px;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFEECF;
     padding: 25px;
-    border-left: 7px solid rgb(248, 192, 7);
+    border-left: 7px solid #F86624;
     border-radius: 10px;
 
 }
 .anouncements{
-background-color:  rgb(255, 255, 255);
+background-color:  #FFEECF;
 padding: 15px;
-width: 150px;
+width: 300px;
 height: 300px;
 border-radius: 10px;
+margin-bottom: 30px;
 }
 
 .trending{
-    background-color:  rgb(255, 255, 255);
+    background-color:  #FFEECF;
 padding: 15px;
-width: 150px;
+width: 300px;
 height: 300px;
 border-radius: 10px;
 }
